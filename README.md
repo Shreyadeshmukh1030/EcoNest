@@ -1,30 +1,80 @@
-# EcoNest website build
+🌱 EcoNest – Gift to Nature
+📌 Project Overview
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+EcoNest is a frontend web application designed to promote eco-friendly home décor and sustainable living. The platform showcases products made from natural and recycled materials, aiming to reduce plastic usage and carbon footprint while spreading awareness about environmental responsibility.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/riyadeshmukh9579-1346s-projects/v0-eco-nest-website-build)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/pyjChKhF569)
+The project focuses on combining visual appeal, user-friendly design, and sustainability awareness through a simple yet effective web interface.
 
-## Overview
+🎯 Project Objective
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+Promote sustainable lifestyle choices
 
-## Deployment
+Encourage the use of eco-friendly home décor
 
-Your project is live at:
+Educate users about environmental impact through interactive content
 
-**[https://vercel.com/riyadeshmukh9579-1346s-projects/v0-eco-nest-website-build](https://vercel.com/riyadeshmukh9579-1346s-projects/v0-eco-nest-website-build)**
+Provide a clean, responsive, and accessible web experience
 
-## Build your app
+🛠️ Technical Stack Used
+Frontend
 
-Continue building your app on:
+HTML – Website structure and content
 
-**[https://v0.app/chat/pyjChKhF569](https://v0.app/chat/pyjChKhF569)**
+CSS – Styling, layout, and responsiveness
 
-## How It Works
+JavaScript – Interactivity and basic dynamic features (quiz, UI behavior)
 
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+Deployment
+
+Netlify – Hosting and continuous deployment for the static website
+
+Version Control
+
+Git & GitHub – Source code management and deployment integration
+
+✨ Key Features
+
+Responsive and user-friendly UI
+
+Eco-friendly product showcase
+
+Sustainability awareness sections
+
+Interactive quiz to engage users
+
+Fast loading static website hosted via CDN
+
+🌍 Sustainability Focus
+
+EcoNest emphasizes:
+
+Use of artisan-made and eco-friendly décor
+
+Reduction of plastic and carbon footprint
+
+Support for sustainable and ethical living practices
+
+🚀 Deployment
+
+The project is deployed using Netlify, enabling:
+
+Secure HTTPS hosting
+
+Continuous deployment from GitHub
+
+Optimized performance using CDN
+
+🔗 Live Website: https://econestgifttonature.netlify.app/
+
+🔮 Future Enhancements
+
+Backend integration for product management
+
+Shopping cart and checkout functionality
+
+User authentication and order tracking
+
+Database-driven product filtering
+
+Payment gateway integration
+
