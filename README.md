@@ -1,4 +1,4 @@
-# 🌱 EcoNest – Gift to Nature
+# 🌱 EcoNest – Gift from Nature
 
 ## 📌 Project Overview
 **EcoNest** is a frontend web application designed to promote **eco-friendly home décor and sustainable living**. The platform showcases products made from **natural and recycled materials**, aiming to reduce **plastic usage and carbon footprint** while spreading awareness about environmental responsibility.
