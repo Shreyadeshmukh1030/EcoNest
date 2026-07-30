@@ -26,8 +26,8 @@ export function ProductCard({ product }: { product: Product }) {
   return (
     <Card className="h-full flex flex-col group hover:shadow-lg transition-all duration-300">
       <CardHeader className="p-0 relative overflow-hidden">
-        <Link href={`/products#${product.slug}`} aria-label={`View ${product.name}`}>
-          <div className="relative w-full h-60 bg-muted">
+        <Link href={`/products/${product.slug}`} aria-label={`View ${product.name}`} className="block">
+          <div className="relative w-full h-56 sm:h-60 bg-muted overflow-hidden">
             <Image
               src={imgError ? "/placeholder.svg" : product.image}
               alt={product.name}
@@ -36,12 +36,17 @@ export function ProductCard({ product }: { product: Product }) {
               onError={() => setImgError(true)}
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             />
+            {product.material && (
+              <span className="absolute bottom-2 left-2 bg-black/70 text-white text-[11px] px-2.5 py-0.5 rounded-full backdrop-blur-sm font-medium">
+                🌱 {product.material}
+              </span>
+            )}
           </div>
         </Link>
         <button
           onClick={() => toggle(product.id)}
-          className={`absolute top-3 right-3 p-2 rounded-full backdrop-blur-sm transition-all ${
-            wished ? "bg-red-500 text-white scale-110" : "bg-white/80 hover:bg-white text-gray-700"
+          className={`absolute top-3 right-3 p-2.5 rounded-full backdrop-blur-sm transition-all shadow-sm ${
+            wished ? "bg-red-500 text-white scale-110" : "bg-white/90 hover:bg-white text-gray-700 hover:scale-105"
           }`}
           aria-pressed={wished}
           aria-label={wished ? "Remove from wishlist" : "Add to wishlist"}

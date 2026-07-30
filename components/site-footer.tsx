@@ -1,29 +1,51 @@
+import Image from "next/image"
+import Link from "next/link"
+
 export default function SiteFooter() {
   return (
-    <footer className="border-t border-border mt-16">
-      <div className="mx-auto max-w-6xl px-4 py-8 grid md:grid-cols-3 gap-6">
+    <footer className="border-t border-border mt-16 bg-card">
+      <div className="mx-auto max-w-6xl px-4 py-10 grid md:grid-cols-3 gap-8">
         <div>
-          <div className="flex items-center gap-2">
-            <span className="inline-block h-6 w-6 rounded-full bg-primary" aria-hidden="true" />
-            <span className="font-serif text-lg">EcoNest</span>
-          </div>
-          <p className="mt-3 text-muted-foreground leading-relaxed">Design that doesn’t cost the Earth.</p>
+          <Link href="/" className="flex items-center gap-2.5 group">
+            <div className="relative h-9 w-9 rounded-full overflow-hidden shadow-sm border border-emerald-500/20 group-hover:scale-105 transition-transform">
+              <Image
+                src="/logo.png"
+                alt="EcoNest Official Logo"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <span className="font-serif text-xl font-bold bg-gradient-to-r from-emerald-800 via-emerald-600 to-amber-700 dark:from-emerald-400 dark:to-emerald-200 bg-clip-text text-transparent">
+              EcoNest
+            </span>
+          </Link>
+          <p className="mt-3 text-muted-foreground text-sm leading-relaxed">
+            Design that doesn’t cost the Earth. Handcrafted bamboo furniture, air-purifying plants & sustainable gifting.
+          </p>
         </div>
         <nav className="grid grid-cols-2 gap-4" aria-label="Footer">
-          <div className="space-y-2">
-            <div className="font-medium">Shop</div>
-            <a href="/shop" className="text-muted-foreground hover:text-primary">
-              Lamps
-            </a>
-            <a href="/shop" className="text-muted-foreground hover:text-primary">
-              Rugs
-            </a>
-            <a href="/shop" className="text-muted-foreground hover:text-primary">
-              Planters
-            </a>
-            <a href="/shop" className="text-muted-foreground hover:text-primary">
-              Wall Art
-            </a>
+          <div className="space-y-2 text-sm">
+            <div className="font-semibold text-foreground">Shop</div>
+            <div>
+              <Link href="/plants" className="text-muted-foreground hover:text-emerald-600 transition-colors">
+                Indoor Plants 🌿
+              </Link>
+            </div>
+            <div>
+              <Link href="/gifts" className="text-muted-foreground hover:text-amber-600 transition-colors">
+                Gifts to Give 🎁
+              </Link>
+            </div>
+            <div>
+              <Link href="/products" className="text-muted-foreground hover:text-primary transition-colors">
+                Full Catalog
+              </Link>
+            </div>
+            <div>
+              <Link href="/shop" className="text-muted-foreground hover:text-primary transition-colors">
+                Furniture & Décor
+              </Link>
+            </div>
           </div>
           <div className="space-y-2">
             <div className="font-medium">Company</div>

@@ -69,6 +69,23 @@ export function useCart() {
   }
 }
 
+export type Promo = { code: string; discountPercent: number; discountFlat: number } | null
+
+export function usePromo() {
+  const { data } = useSWR<Promo>("cart:promo", fetcher, { fallbackData: getLS("cart:promo", null) })
+  return {
+    promo: data ?? null,
+    setPromo: (p: Promo) => {
+      setLS("cart:promo", p)
+      mutate("cart:promo", p, { revalidate: false })
+    },
+    clearPromo: () => {
+      setLS("cart:promo", null)
+      mutate("cart:promo", null, { revalidate: false })
+    },
+  }
+}
+
 export function useWishlist() {
   const { data } = useSWR<WishlistItem[]>("wishlist:items", fetcher, { fallbackData: getLS("wishlist:items", []) })
   const items = (data ?? []) as WishlistItem[]
