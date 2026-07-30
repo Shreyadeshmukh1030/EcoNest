@@ -29,15 +29,35 @@
 
 ---
 
-## 📸 Website Preview
+## 📸 Website Screenshots
 
-| Home Page | Indoor Plants | Gifts |
-|-----------|---------------|-------|
-| Sustainable living homepage with hero banner, category nav, and product grids | 15+ NASA-recommended air-purifying indoor plants & bonsai | 8+ curated sustainable eco-friendly gift hampers |
+### 🏠 Homepage — Hero, Category Navigation & Product Grids
+![EcoNest Homepage](https://raw.githubusercontent.com/Shreyadeshmukh1030/EcoNest/main/public/screenshots/homepage.png)
 
-| Shop | Cart & Checkout | Admin Dashboard |
-|------|-----------------|-----------------|
-| Full catalog with filters by category, price, rating | Multi-step checkout with address, payment & order confirmation | Real-time sales analytics, product CRUD, and order management |
+---
+
+### 🌿 Indoor Botanical Nursery (`/plants`)
+![EcoNest Plants Page](https://raw.githubusercontent.com/Shreyadeshmukh1030/EcoNest/main/public/screenshots/plants.png)
+
+---
+
+### 🎁 Gifts to Give Collection (`/gifts`)
+![EcoNest Gifts Page](https://raw.githubusercontent.com/Shreyadeshmukh1030/EcoNest/main/public/screenshots/gifts.png)
+
+---
+
+### 🛒 Full Product Catalog & Shop (`/shop`)
+![EcoNest Shop Page](https://raw.githubusercontent.com/Shreyadeshmukh1030/EcoNest/main/public/screenshots/shop.png)
+
+---
+
+### 📊 Admin & Operations Dashboard (`/admin`)
+![EcoNest Admin Dashboard](https://raw.githubusercontent.com/Shreyadeshmukh1030/EcoNest/main/public/screenshots/admin.png)
+
+---
+
+### 🛍️ Shopping Cart (`/cart`)
+![EcoNest Cart Page](https://raw.githubusercontent.com/Shreyadeshmukh1030/EcoNest/main/public/screenshots/cart.png)
 
 ---
 
